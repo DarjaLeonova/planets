@@ -70,11 +70,6 @@ const planets = [
     },
 ];
 
-// =============================================================
-//   WRITE YOUR CODE BELOW
-// =============================================================
-
-// 1: Create a 'Planet' component that renders a planet card
 const Planet = (props) => {
     return (
         <div className="card">
@@ -92,8 +87,6 @@ const Planet = (props) => {
     );
 }
 
-// 2: Create a container component that iterates over the planets array
-//    and renders a 'Planet' component for each object in the array
 const PlanetList = (props) => {
     return (
         <div className="container">
@@ -107,7 +100,6 @@ const PlanetList = (props) => {
     );
 }
 
-// 3: Render the container component to the DOM
 ReactDOM.render(
     <PlanetList planets={planets} />,
     document.getElementById('root')
